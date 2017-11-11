@@ -12,17 +12,23 @@ import java.util.Scanner;
  * @author Administrateur
  */
 public class Question {
-    protected String titreQuestion;
-    protected String rep1;
-    protected String rep2;
-    protected String rep3;
-    protected String rep4;
-    protected int numBonneReponse;
+    private String titreQuestion;
+    private String rep1;
+    private String rep2;
+    private String rep3;
+    private String rep4;
+    private int numBonneReponse;
 
     public String getTitreQuestion() {
         return titreQuestion;
     }
 
+    @Override
+    public String toString() {
+        return titreQuestion ;
+    }
+    
+    
     public void setTitreQuestion(String titreQuestion) {
         this.titreQuestion = titreQuestion;
     }
